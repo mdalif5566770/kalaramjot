@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f4f8f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: #0b7a3b;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    text-align: left;
+}
+
+.logo h1 {
+    font-size: 28px;
+    margin-bottom: 2px;
+}
+
+.logo p {
+    font-size: 14px;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+}
+
+/* Home / Hero */
+.hero,
+#home {
+    min-height: 450px;
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+        url("images/village.jpg") center/cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.hero h2,
+#home h2 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.hero p,
+#home p {
+    font-size: 20px;
+    max-width: 700px;
+}
+
+/* Sections */
+section {
+    padding: 60px 20px;
+}
+
+section h2 {
+    text-align: center;
+    color: #0b7a3b;
+    margin-bottom: 25px;
+    font-size: 32px;
+}
+
+section h3 {
+    color: #0b7a3b;
+    margin: 25px 0 15px;
+}
+
+section p {
+    max-width: 900px;
+    margin: 0 auto 15px;
+    line-height: 1.8;
+    font-size: 18px;
+    text-align: justify;
+}
+
+/* Lists */
+section ul {
+    max-width: 700px;
+    margin: 20px auto;
+    padding-left: 25px;
+    text-align: left;
+}
+
+section li {
+    margin: 8px 0;
+    font-size: 18px;
+}
+
+/* Links */
+section a {
+    color: #08783a;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+section a:hover {
+    text-decoration: underline;
+}
+
+/* Beauty */
+#beauty {
+    background: #ffffff;
+}
+
+#beauty p {
+    color: #333;
+}
+
+/* Location */
+#location {
+    background: #eef7ef;
+}
+
+/* About */
+#about-me {
+    background: #ffffff;
+}
+
+/* Like / Comment / Share */
+.post-actions {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    padding: 30px 20px;
+}
+
+.post-actions button {
+    border: none;
+    padding: 12px 20px;
+    border-radius: 25px;
+    background: #0b7a3b;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.post-actions button:hover {
+    background: #095c2d;
+    transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+
+    header {
+        flex-direction: column;
+        padding: 15px 12px;
+    }
+
+    .logo {
+        text-align: center;
+        margin-bottom: 12px;
+    }
+
+    .logo h1 {
+        font-size: 25px;
+    }
+
+    nav ul {
+        justify-content: center;
+        gap: 10px 14px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+
+    .hero,
+    #home {
+        min-height: 380px;
+        padding: 30px 15px;
+    }
+
+    .hero h2,
+    #home h2 {
+        font-size: 30px;
+    }
+
+    .hero p,
+    #home p {
+        font-size: 17px;
+    }
+
+    section {
+        padding: 45px 15px;
+    }
+
+    section h2 {
+        font-size: 27px;
+    }
+
+    section p {
+        font-size: 16px;
+        text-align: left;
+    }
+
+    section li {
+        font-size: 16px;
+    }
+}
